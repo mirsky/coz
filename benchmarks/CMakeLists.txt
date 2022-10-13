@@ -9,9 +9,8 @@ function(add_coz_run_target name)
 
     add_custom_target(${name}
         COMMENT "Running coz for ${name}"
-        COMMAND ${PROJECT_SOURCE_DIR}/coz run --- ${COZ_RUN_COMMAND}
-        WORKING_DIRECTORY ${PROJECT_BINARY_DIR}
-        DEPENDS coz)
+        COMMAND coz run --- ${COZ_RUN_COMMAND}
+        WORKING_DIRECTORY ${PROJECT_BINARY_DIR})
 endfunction()
 
 file(GLOB cmake_files */CMakeLists.txt)

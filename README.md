@@ -74,6 +74,12 @@ cd coz/benchmarks && cmake . && make && cd ../..
 coz run --- ./coz/benchmarks/toy/toy
 ```
 
+Tip: a convenient way to run the different benchmarks, and have the inputs automatically downloaded and passed as arguments, is to use the preset *make* targets. Bash auto-completion (using the tab key) can list them:
+```
+cd coz/benchmarks
+make run_<TAB>
+```
+
 Finally, use the Coz viewer to see the results. This command will open up a browser tab, from which you will need to load the file `profile.coz`.
 
 ```shell
