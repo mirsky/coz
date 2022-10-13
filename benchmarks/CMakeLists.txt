@@ -1,4 +1,5 @@
 add_compile_options(-g -O3 -DNDEBUG -gdwarf-3)
+add_link_options(-ldl)
 
 function(add_coz_run_target name)
     set(one_value_args "")
